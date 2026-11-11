@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "picks",
+  "info": {
+    "singularName": "pick",
+    "pluralName": "picks",
+    "displayName": "Pick",
+    "description": "A book or movie recommendation."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "kind": {
+      "type": "enumeration",
+      "enum": [
+        "book",
+        "movie"
+      ],
+      "required": true
+    },
+    "externalId": {
+      "type": "string",
+      "required": true
+    },
+    "note": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
